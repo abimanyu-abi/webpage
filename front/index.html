@@ -4,32 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="serv.js"></script>
     <title>Document</title>
 </head>
 <body>
-    <form action="">
+    <div>
+    <form onsubmit="check(event)" method="post">
         <label >Firstname</label>
         <input type="text" name="firstname" required>
         <label> lastname</label>
         <input type="text" name="lastname" id="lastname" required>
         <label >Email</label>
-        <input type="email" required>
+        <input type="email" name="email" required>
         <label>phoneNum</label>
-        <input type="tel" required>
+        <input type="tel" name="phonenum" required>
         <label >DateOfBirth</label>
-        <input type="date">
-        <select name="gender" id="gender">
+        <input type="date" name="date" required>
+        <label >Gender</label>
+        <select name="gender" id="gender" name="gender" required>
             <option value="male">male</option>
             <option value="female">female</option>
             <option value="other">other</option>
         </select>
         <label>Address Line 1</label>
-        <input type="text" required>
+        <input type="text" name="address1" required>
         <label>Address Line 2</label>
-        <input type="text" required>
+        <input type="text" name="address2" required>
+        <button>Submit</button>
         
 
 
     </form>
+</div>
 </body>
+
+
 </html
